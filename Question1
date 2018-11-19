@@ -1,0 +1,24 @@
+public class Question1 {
+	public static void main(String [] args) {
+		int answer = 0; 
+		int mult1 = 3;
+		int mult2 = 5; 
+		
+		for(int i = 0; i<1000; i++) {
+			if(i%mult1 == 0 ) {
+				answer = answer + i;
+			}
+			
+			if (i%mult2 == 0) {
+				answer = answer + i;
+			}
+			
+			if (i % (mult1 * mult2)==0){
+				answer = answer - i;
+			}
+			
+		}
+		System.out.println(answer);
+			
+	}
+}
